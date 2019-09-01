@@ -33,6 +33,11 @@ class Song
     count_hash = {}
     @@genres.each { |genre| count_hash.store(genre, @@genres.count(genre) ) }
     count_hash
+  end
+  
+  def self.artist_count
+    count_hash = {}
+    @@artists.each { |artist| count_hash.store(artist, @@artists.count(artist)) }
   end 
   
 end
