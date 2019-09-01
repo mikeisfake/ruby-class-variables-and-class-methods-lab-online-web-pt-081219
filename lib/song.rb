@@ -32,7 +32,7 @@ class Song
   def self.genre_count
     h = {}
     @@genre.each do |genre| 
-      h.store {}
+      h.store(genre, )
     end 
   end 
   
