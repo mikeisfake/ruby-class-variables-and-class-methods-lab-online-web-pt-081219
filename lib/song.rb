@@ -31,7 +31,7 @@ class Song
   
   def self.genre_count
     count_hash = {}
-    @@genres.each { |genre| count_hash.store(genre,count_hash[genre]+1 ) }
+    @@genres.each { |genre| count_hash.store(genre,count_hash[genre] ) }
     puts count_hash
   end 
   
