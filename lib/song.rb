@@ -38,6 +38,7 @@ class Song
   def self.artist_count
     count_hash = {}
     @@artists.each { |artist| count_hash.store(artist, @@artists.count(artist)) }
+    count_hash
   end 
   
 end
